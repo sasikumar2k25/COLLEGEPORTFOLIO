@@ -3,22 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>college results bhaii</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <style>
+ button {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    
+    transition: background-color 0.5s ease-in-out;
+}
+
+
+button:hover {
+    background-color: green; /* Smooth transition effect */
+}
+
+@keyframes colorChange {
+    0% { background-color: red; }
+    25% { background-color: blue; }
+    50% { background-color: green; }
+    75% { background-color: yellow; }
+    100% { background-color: red; }
+}
+
+button {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    animation: colorChange 5s infinite; /* Looping animation */
+}
+@keyframes moveText {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(100px); }
+}
+.center-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full height of the viewport */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+}
+
+
+.moving-text {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+    cursor: pointer;
+    animation: moveText 1s infinite alternate;
+  
+   
+}
+body{
+ 
+ 
+    background-image: url(https://i.pinimg.com/474x/8f/c6/ca/8fc6caf442d69ecdfcb46ebb94c865f3.jpg);
+    background-repeat:none;
+    background-size: cover;
+}
+H1{
+    color: aqua;
+    text-align: center;
+}
+h2{
+    text-align: center;
+    color:chartreuse;
+}
+
+
+       
+    </style>
 </head>
 <body>
-    <header>
-        <h1 class="h1">🏫 Welcome to the ECE Department</h1>
-        <h2 class="h2">🔌 Innovate. Engineer. Transform. 📡</h2>
-    </header>
-<main>
-    <section>
-        <h1 class="dot">This site is based on students Results</h1>
-        <form>
-            <a href="http://examportal.pbrvits.ac.in/beteportal/"><button>Results</button></a>
-        </form>
-    </section>
-</main>
-       
+    <H1>WELCOME TO ECE DEPRTMENT!!</H1>
+    <h2>🔌 Innovate. Engineer. Transform. 📡</h2>
+    <div class="center-container">
+        
+
+    <a href="http://examportal.pbrvits.ac.in/beteportal/"><button style="border-radius: 20px; width: 140px; height: 40px; text-align: center;" class="but">click</button> </a>
+    <p class="moving-text">Results out!!</p>
+   
+    </div>
+    
+    
 </body>
 </html>
